@@ -31,3 +31,18 @@ puts _aluno[:disciplina]
 
 # Caso a chave não exista, será retornado nil (nulo)
 puts _aluno[:teste]
+
+# Testando um pouco mais
+
+alberto = {nome: 'Alberto', nota: 7, disciplina: 'Artes'}
+salumao = {nome: 'Salumão', nota: 10, disciplina: 'Programação'}
+fernanda = {nome: 'Fernanda', nota: 8.2, disciplina: 'Estrutura de Dados I'}
+
+alunos = []
+alunos << alberto
+alunos << salumao
+alunos << fernanda
+
+puts "#{alunos[0][:nome]} tirou nota #{alunos[0][:nota]} em #{alunos[0][:disciplina]}"
+puts "#{alunos[1][:nome]} tirou nota #{alunos[1][:nota]} em #{alunos[1][:disciplina]}"
+puts "#{alunos[2][:nome]} tirou nota #{alunos[2][:nota]} em #{alunos[2][:disciplina]}"
