@@ -34,3 +34,9 @@ end
 for aluno in alunos do
     puts aluno[:nome]
 end
+
+# Em ruby há outra opção:
+# loop do
+    # seu código
+    # pra sair é só colocar o comando break como condição de parada
+# end
