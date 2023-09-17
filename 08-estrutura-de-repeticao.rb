@@ -29,3 +29,8 @@ end
 alunos.each do |aluno|
     puts aluno[:nome]
 end
+
+# Outra forma de utilizar for
+for aluno in alunos do
+    puts aluno[:nome]
+end
