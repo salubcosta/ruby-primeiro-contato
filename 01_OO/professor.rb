@@ -1,10 +1,11 @@
-class Professor
+require_relative 'funcionario'
+
+class Professor < Funcionario
     attr_reader :ferias
-    attr_accessor :nome, :codigo_funcionario, :disciplina, :data_inicio_ferias, :data_fim_ferias
+    attr_accessor :disciplina, :data_inicio_ferias, :data_fim_ferias
     
     def initialize(nome, codigo_funcionario, disciplina)
-        @nome = nome
-        @codigo_funcionario = codigo_funcionario
+        super(nome, codigo_funcionario)
         @disciplina = disciplina
         @ferias = false
     end
@@ -18,5 +19,13 @@ class Professor
         @ferias = false
         @data_fim_ferias = Time.now()
     end
+
+    def imprime_dados
+        super()
+        puts "Disciplina: #{@disciplina}"
+    end
+    
+    private
+    attr_writer :ferias
 
 end
