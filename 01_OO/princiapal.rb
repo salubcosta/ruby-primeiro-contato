@@ -32,5 +32,14 @@ turma1.adicionar_aluno(salumao)
 turma1.adicionar_aluno(joelda)
 puts
 puts turma1.alunos[0].nome # Salumão Barbosa da Costa
-
+puts
 # turma1.alunos = [] # private method `alunos='
+
+# Defini atributo férias como privado
+# andre.ferias = false #./01_OO/princiapal.rb:39:in `<main>': private method `ferias=' called
+
+# Testando método
+andre.imprime_dados
+
+# Árvore de herança
+puts "\nÁrvore de Herança da classe Professor: #{Professor.ancestors}"
